@@ -2,3 +2,6 @@
 立体音響を作成するプログラムです
 
 ## 研究成果
+* 西村沙恵，川村新，“音響MRのためのBRIR検出および補間”，第39回信号処理シンポジウム，Dec. 2024 (12/16 発表予定)
+* S. Nishimura and A. Kawamura,“Acoustic Mixed Reality Using Extracted Clapping Sound as BRIR”，2024 International Workshop on Smart Info-Media Systems in Asia (SISA2024), Dec. 2024 (Accepted)
+![image](https://github.com/user-attachments/assets/783007be-7a03-401d-8b0f-ce3ed08a0ab2)
