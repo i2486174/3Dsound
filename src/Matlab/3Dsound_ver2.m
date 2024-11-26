@@ -90,14 +90,8 @@ for i=1:Len
 end
 
 %% 入力と出力をwavファイルに保存
-%Add_L2 = conv(s3d, BRIR(:,3)); % 3D Sound Lch
-%Add_R2 = conv(s3d, BRIR(:,4)); % 3D Sound Rch
-%Add_3D2 = [Add_L2, Add_R2];        % 3D Stereo Sound
-%Add_3D2 = Add_3D2/max(Add_3D2(:))*0.5;
-%BRIR_out = [BRIR(:,3), BRIR(:,4)];
 audiowrite('input.wav',  s, fs);
 audiowrite('output.wav', y, fs);     
-
 
 % 検出したBRIRをプロット
 figure(1);clf;
