@@ -8,7 +8,7 @@ clear;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 [s, fs] = audioread("こんにちは.wav");  % 立体音響化する音源
 s = s./max(abs(s))*0.1; % 音量を下げる 
-[s0, fs2] = audioread("impulse06.wav"); % 廊下
+[s0, fs2] = audioread("impulse_te_5.wav"); % 廊下
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
