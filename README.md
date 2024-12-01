@@ -1,3 +1,4 @@
+[![lisence](https://img.shields.io/badge/License-MIT-green)](https://github.com/i2486174/3Dsound/blob/main/LICENSE)
 # 3D Sound
 本研究は，BRIRを用いて音響MRを作成することを目的としている．
 また，個人のBRIRを検出する方法を検討している．
