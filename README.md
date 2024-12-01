@@ -1,4 +1,10 @@
 [![lisence](https://img.shields.io/badge/License-MIT-green)](https://github.com/i2486174/3Dsound/blob/main/LICENSE)
+# 成果物
+* 研究テーマ・論文の資料については，「SISA2024」の発表資料をご参照ください．
+* 研究で作成したプログラムは「src/MATLAB」ディレクトリに置いています．
+* 研究で作成したプログラムの最新版は「src/MATLAB/3Dsound_ver2.m」です．
+* プログラム実行には同ディレクトリにある「こんにちは.wav」と「impulse_te.wav」の2つのwavのダウンロードが必要です．
+
 # 3D Sound
 使用言語：MATLAB
 
