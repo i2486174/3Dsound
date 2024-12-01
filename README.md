@@ -2,7 +2,7 @@
 # 成果物
 * 研究テーマ・論文の資料については，「SISA2024」の発表資料をご参照ください．
 * 研究で作成したプログラムは「src/MATLAB」ディレクトリに置いています．
-* 研究で作成したプログラムの最新版は「src/MATLAB/3Dsound_ver2.m」です．
+* SISA2024に採択された論文作成で利用したプログラムは，「src/MATLAB/3Dsound_ver2.m」です．
 * プログラム実行には同ディレクトリにある「こんにちは.wav」と「impulse_te.wav」の2つのwavのダウンロードが必要です．
 * 「output.wav」は「3Dsound_ver2.m」の実行結果のwavファイルです．「3Dsound_ver2.m」を実行すると「output.wav」が生成されます．
 * 「impulse_te.wav」を聞いた後に，「output.wav」を聴いてみてください．
