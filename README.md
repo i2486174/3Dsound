@@ -1,5 +1,9 @@
 [![lisence](https://img.shields.io/badge/License-MIT-green)](https://github.com/i2486174/3Dsound/blob/main/LICENSE)
 # 3D Sound
+使用言語：MATLAB
+
+使用環境：MATLAB2020b
+
 本研究は，BRIRを用いて音響MRを作成することを目的としている．
 また，個人のBRIRを検出する方法を検討している．
 
@@ -7,6 +11,7 @@
 
 ## MATLAB
 私の研究で使用する言語は，MATLABを採用している．MATLABは，データ解析やアルゴリズム開発，モデル開発に特化した言語である． MATLABを採用する理由として，高い数値処理能力があり，機能も豊富であることが挙げられる．
+
 
 ## 研究成果
 * 西村沙恵，川村新，“音響MRのためのBRIR検出および補間”，第39回信号処理シンポジウム，Dec. 2024 (12/16 発表予定)
