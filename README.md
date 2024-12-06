@@ -1,5 +1,5 @@
 [![lisence](https://img.shields.io/badge/License-MIT-green)](https://github.com/i2486174/3Dsound/blob/main/LICENSE)
-# 成果物
+# :dizzy: 成果物
 * 研究テーマ・論文の資料については，「SISA2024」の発表資料をご参照ください．
 * 研究で作成したプログラムは「src/MATLAB」ディレクトリに置いています．
 * SISA2024に採択された論文作成で利用したプログラムは，「src/MATLAB/3Dsound_ver2.m」です．
@@ -8,7 +8,7 @@
 * 「impulse_te.wav」を聞いた後に，「output.wav」を聴いてみてください．
 * 視聴の際は，バイノーラルイヤホンを使用してください．
 
-# 3D Sound
+# :musical_note: 3D Sound
 使用言語：MATLAB
 
 使用環境：MATLAB2020b
@@ -24,6 +24,6 @@
 私の研究で使用する言語は，MATLABを採用している．MATLABは，データ解析やアルゴリズム開発，モデル開発に特化した言語である． MATLABを採用する理由として，高い数値処理能力があり，機能も豊富であることが挙げられる．
 
 
-## :books: 研究成果
+# :books: 研究成果
 * 西村沙恵，川村新，“音響MRのためのBRIR検出および補間”，第39回信号処理シンポジウム，Dec. 2024 (12/16 発表予定)
 * S. Nishimura and A. Kawamura,“Acoustic Mixed Reality Using Extracted Clapping Sound as BRIR”，2024 International Workshop on Smart Info-Media Systems in Asia (SISA2024), Dec. 2024 (SISA Selected Papers)
