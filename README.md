@@ -8,7 +8,7 @@
 * 「impulse_te.wav」を聞いた後に，「output.wav」を聴いてみてください．
 * 視聴の際は，バイノーラルイヤホンを使用してください．
 
-# :musical_note: 3D Sound
+# :guitar: 3D Sound
 使用言語：MATLAB
 
 使用環境：MATLAB2020b
