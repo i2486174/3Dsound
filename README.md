@@ -26,4 +26,4 @@
 
 # :books: 研究成果
 * S. Nishimura and A. Kawamura,“Acoustic Mixed Reality Using Extracted Clapping Sound as BRIR”，Proc. of 2024 International Workshop on Smart Info-Media Systems in Asia (SISA2024), RS1-9, pp.43-46, Dec. 2024. ([SISA2024 Student Papers Awards](https://www.ieice-sisa.org/?p=6341))
-* 西村沙恵，川村新，“音響MRのためのBRIR検出および補間”，第39回信号処理シンポジウム講演論文集, 4 pages, Dec. 2024.(https://award-con.com/sips2024/program/)
+* 西村沙恵，川村新，“音響MRのためのBRIR検出および補間”，第39回信号処理シンポジウム講演論文集, 4 pages, Dec. 2024.([プログラム](https://award-con.com/sips2024/program/))
