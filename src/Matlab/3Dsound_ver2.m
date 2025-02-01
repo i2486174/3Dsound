@@ -4,10 +4,10 @@
 % 最大値・最小値・現在の信号の3点を利用
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clear;
-[s, fs] = audioread("こんにちは.wav");  % 立体音響化する音源
+[s, fs] = audioread("こんにちは.wav");    % 立体音響化する音源
 s3d=s*1.0;
 
-[s, fs] = audioread("impulse_te_5.wav");   % 生活音
+[s, fs] = audioread("impulse_te_5.wav");% 生活音
 buff = fs*0.5;
 Len = length(s);                        % 信号の長さ
 D   = 10;                               % 信号の変化量(傾き)を調べる範囲(片側)
@@ -31,7 +31,7 @@ HBias = zeros(3,Len);                   % 検出したxのエネルギー
 for i=1:Len
     x(1,:)   = s(i,:);                  % 現在の入力信号
     
-    % 現在の信号を含むbuff秒間をBRIRであると仮定する
+    %% 現在の信号を含むbuff秒間をBRIRであると仮定する
     HF1 = x(D,1) - min( x(2:D,1) );     % 前方の高さ変化1ch
     HB1 = x(D,1) - min( x(D+1:2*D,1) ); % 後方の高さ変化1ch
     HF2 = x(D,2) - min( x(2:D,2) );     % 前方の高さ変化2ch
@@ -41,7 +41,7 @@ for i=1:Len
     HBias(2,i) = cnt;
     HBias(3,i) = flg;
     
-    % 信号がBRIRかどうかを判定する
+    %% 信号がBRIRかどうかを判定する
     if flg==0
     if HFB_now>=Th                      % 傾きがしきい値を超えた？
         cnt = 0;                        % カウンタをリセット
@@ -53,38 +53,38 @@ for i=1:Len
          end                             
     end
     
-    % BRIRだった場合，検出した信号を利用して立体音響を作成
-    if (cnt >= buff-441)                  % カウンタ1秒弱経過？
+    %% BRIRだった場合，検出した信号を利用して立体音響を作成
+    if (cnt >= buff-441)                       % カウンタ1秒弱経過？
         x_s  = x.^2;
         x_ss = sum(x_s,"all");
         brir = x ./ x_ss .* 2;
         Add_3D = [];
-        BRIR = [BRIR flip(brir)];           % 観測信号をBRIRとする
-        Add_L = conv(s3d, BRIR(:,num*2+1)); % 3D Sound Lch
-        Add_R = conv(s3d, BRIR(:,num*2+2)); % 3D Sound Rch
-        Add_3D = [Add_L, Add_R];            % 3D Stereo Sound
+        BRIR = [BRIR flip(brir)];              % 観測信号をBRIRとする
+        Add_L = conv(s3d, BRIR(:,num*2+1));    % 3D Sound Lch
+        Add_R = conv(s3d, BRIR(:,num*2+2));    % 3D Sound Rch
+        Add_3D = [Add_L, Add_R];               % 3D Stereo Sound
         Add_3D = Add_3D/max(Add_3D(:))*0.5;
         Len3D = length(Add_L);
         %Len3D = fs;
-        num=num+1;                      % BRIRの検出数を＋1
+        num=num+1;                             % BRIRの検出数を＋1
         time_index = [time_index; HFB_max, i]; % BRIRの終了時刻を記録
-        HFB_max=0;                      % 傾きの最大値を初期化
-        cnt  = 0;                       % カウンタをリセット
-        n=1;                            % 3D sound time index
-        flg=1;                          % 3D sound addition flag
+        HFB_max=0;                             % 傾きの最大値を初期化
+        cnt  = 0;                              % カウンタをリセット
+        n=1;                                   % 3D sound time index
+        flg=1;                                 % 3D sound addition flag
     end
     end
-    x(2:end,:)=x(1:end-1,:);            % 1秒間の入力ベクトルをシフト
+    x(2:end,:)=x(1:end-1,:);                   % 1秒間の入力ベクトルをシフト
 
-    if flg==1                           % flag=1のとき
-        y(i,:)=s(i,:)+Add_3D(n,:);      % 3D Sound Addition
-        n=n+1;                          % 3D Sound時刻＋1
+    if flg==1                                  % flag=1のとき
+        y(i,:)=s(i,:)+Add_3D(n,:);             % 3D Sound Addition
+        n=n+1;                                 % 3D Sound時刻＋1
     end
-    if n>=Len3D                         % 3D音響付加が2秒を超えると初期状態に戻す
+    if n>=Len3D                                % 3D音響付加が2秒を超えると初期状態に戻す
         %flg=0;
         n=0;
     end
-    if n>=Len3D/2                        % 3D音響付加が2秒を超えると初期状態に戻す
+    if n>=Len3D/2                              % 3D音響付加が2秒を超えると初期状態に戻す
         flg=0;
     end
 end
@@ -93,7 +93,7 @@ end
 audiowrite('input.wav',  s, fs);
 audiowrite('output.wav', y, fs);     
 
-% 検出したBRIRをプロット
+%% 検出したBRIRをプロット
 figure(1);clf;
 for i=1:num*2
     subplot(num, 2, i);
